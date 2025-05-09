@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 
 function Help(){
@@ -5,6 +6,7 @@ function Help(){
     <> 
       <Header />
       <h1>This is the Help Page</h1>
+      <Footer />
     </>
   )
 }

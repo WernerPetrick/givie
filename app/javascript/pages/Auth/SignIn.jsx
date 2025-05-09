@@ -64,6 +64,7 @@ function SignIn(){
           </div>
         </div>
       </div>
+      <Footer />
     </>
   )
 }

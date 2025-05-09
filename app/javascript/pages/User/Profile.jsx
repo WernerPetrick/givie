@@ -4,6 +4,7 @@ import ProfileHero from './components/ProfileHero';
 import Wishlist from "./Wishlist";
 import Friends from "./Friends";
 import Settings from "./Settings";
+import Footer from '../components/Footer';
 
 function Profile() {
   const [activeTab, setActiveTab] = useState('wishlist');
@@ -17,7 +18,7 @@ function Profile() {
     <>
       <Header />
       <ProfileHero />
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 py-5">
         <div className="flex justify-center my-4">
           <div className="w-full max-w-md">
             <div role="tablist" className="tabs tabs-bordered flex justify-center">
@@ -63,6 +64,7 @@ function Profile() {
           )}
         </div>
       </div>
+      <Footer />
     </>
   );
 }

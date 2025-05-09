@@ -1,6 +1,7 @@
 import { useForm } from '@inertiajs/react'
 import { Link } from '@inertiajs/react'
 import Header from "../components/Header"
+import Footer from '../components/Footer'
 
 function SignUp(){
   const { data, setData, post} = useForm({
@@ -96,6 +97,7 @@ function SignUp(){
           </div>
         </div>
       </div>
+      <Footer />
     </>
   )
 }

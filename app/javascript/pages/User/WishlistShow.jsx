@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import { useForm, usePage } from '@inertiajs/react';
 import { Link, router } from '@inertiajs/react';
 import { useState } from 'react';
+import Footer from "../components/Footer";
 
 function WishlistShow() {
   const { props } = usePage();
@@ -133,6 +134,7 @@ function WishlistShow() {
           )}
         </div>
       </div>
+      <Footer/>
     </>
   );
 }
