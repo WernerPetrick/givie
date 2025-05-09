@@ -1,6 +1,7 @@
 import { useForm } from '@inertiajs/react'
 import { Link } from '@inertiajs/react'
 import Header from "../components/Header"
+import Footer from '../components/Footer';
 
 function SignIn(){
   const { data, setData, post, processing, errors } = useForm({
