@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap");
+
+.dynapuff400 {
+	font-family: "DynaPuff", system-ui;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
+}
+
+.dynapuff500 {
+	font-family: "DynaPuff", system-ui;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
+}
+
+.dynapuff600 {
+	font-family: "DynaPuff", system-ui;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
+}
+
+.dynapuff700 {
+	font-family: "DynaPuff", system-ui;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
+}

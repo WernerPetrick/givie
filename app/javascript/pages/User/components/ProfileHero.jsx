@@ -1,11 +1,13 @@
 import { usePage } from '@inertiajs/react'
+import css from '../../Custom.module.css'
+
 function ProfileHero(){
   const { props } = usePage()
   const currentUser = props.current_user
 
   return (
     <>
-      <div className="hero bg-base-200">
+      <div className={`${css.sourgummy700} hero bg-base-200`}>
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img
             src={currentUser.avatar_url}
@@ -13,7 +15,7 @@ function ProfileHero(){
             alt="User Avatar"
           />
           <div>
-            <h1 className="text-3xl font-bold">{currentUser.first_name} {currentUser.last_name}</h1>
+            <h1 className="text-5xl font-bold">{currentUser.first_name} {currentUser.last_name}</h1>
           </div>
         </div>
       </div>

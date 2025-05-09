@@ -1,5 +1,6 @@
 import { Link, usePage } from '@inertiajs/react'
 import { Inertia } from '@inertiajs/inertia'
+import css from './Header.module.css'
 
 function Header(){
   const { props } = usePage()
@@ -12,24 +13,24 @@ function Header(){
 
   return (
     <>
-      <div className="navbar bg-base-100 shadow-sm">
+      <div className={`${css.dynapuff600} navbar bg-base-100 shadow-sm`}>
         <div className="navbar-start">
-          <Link href="/" className='btn btn-ghost text-xl'>Givie</Link>
+          <Link href="/" className="btn btn-ghost text-3xl">Givie</Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/features">Features</Link></li>
-            <li><Link href="/help">Help</Link></li>
+            <li><Link href="/" className="text-xl">Home</Link></li>
+            <li><Link href="/features" className="text-xl">Features</Link></li>
+            <li><Link href="/help" className="text-xl">Help</Link></li>
           </ul>
         </div>
         <div className="navbar-end">
           {currentUser ? (
             <>
-              <Link href="/profile" className='btn'>Profile</Link>
+              <Link href="/profile" className='btn text-xl'>Profile</Link>
               <button
                   onClick={handleSignOut}
-                  className="btn"
+                  className="btn text-xl"
                   type='button'
                 >
                   Sign Out
@@ -37,8 +38,8 @@ function Header(){
             </>
           ) : (
             <>
-              <Link href="sign_up" className='btn'>Sign Up</Link>
-              <Link href="sign_in" className='btn'>Sign In</Link>
+              <Link href="sign_up" className='btn text-xl'>Sign Up</Link>
+              <Link href="sign_in" className='btn text-xl'>Sign In</Link>
             </>
           )
           }
