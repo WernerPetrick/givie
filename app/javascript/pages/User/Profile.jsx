@@ -1,6 +1,6 @@
+import { useState } from 'react';
 import Header from "../components/Header";
 import ProfileHero from './components/ProfileHero';
-import { useState } from 'react';
 import Wishlist from "./Wishlist";
 import Friends from "./Friends";
 import Settings from "./Settings";

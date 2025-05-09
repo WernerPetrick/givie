@@ -18,7 +18,16 @@ class UsersController < Clearance::UsersController
   end
 
   def profile
-    render inertia: "User/Profile"
+    @wishlists = current_user.wishlists.includes(:items)
+
+    render inertia: "User/Profile", props: {
+      wishlists: @wishlists.as_json(
+        include: { items: { only: [ :id, :name, :url, :price ] } },
+        methods: :cover_image_url,
+        except: [ :created_at, :updated_at ]
+      ),
+      available_covers: Wishlist::COVER_IMAGES
+    }
   end
 
   private

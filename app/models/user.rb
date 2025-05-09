@@ -2,6 +2,8 @@ class User < ApplicationRecord
   include Clearance::User
   before_save :assign_random_avatar, if: -> { avatar_url.blank? }
 
+  has_many :wishlists, dependent: :destroy
+
   private
 
   def assign_random_avatar
