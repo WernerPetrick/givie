@@ -42,8 +42,7 @@ function Wishlist() {
   }
 
   return (
-    <div className="wishlist-content max-w-7xl mx-auto px-4 py-6" role="tabpanel">
-      {/* Hero section */}
+    <div className="max-w-7xl mx-auto px-4 py-6" role="tabpanel">
       <div className="hero bg-base-200 rounded-box mb-8">
         <div className="hero-content text-center py-10">
           <div className="max-w-md">

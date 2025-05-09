@@ -1,24 +1,27 @@
-# README
+# Givie
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Givie is a platform where users can create wishlists and share them with their friends.
 
-Things you may want to cover:
+## Stack 
 
-* Ruby version
+Vite
+Inertia
+React
+Rails
+Tailwind CSS + DaisyUI
 
-* System dependencies
+## Setup
 
-* Configuration
+```
+bundle install
+```
 
-* Database creation
+```
+npm install
+```
 
-* Database initialization
+## Run Server
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+bin/dev
+```

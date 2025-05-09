@@ -50,7 +50,7 @@ function Profile() {
           </div>
         </div>
         <div className="divider" />
-        <div className="border rounded-lg p-5 mt-4 min-h-56 bg-base-100">
+        <div className="p-5 mt-4 min-h-56 bg-base-100">
           {activeTab === 'wishlist' && (
             <Wishlist />
           )}
