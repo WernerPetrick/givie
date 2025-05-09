@@ -4,11 +4,11 @@ Givie is a platform where users can create wishlists and share them with their f
 
 ## Stack 
 
-Vite
-Inertia
-React
-Rails
-Tailwind CSS + DaisyUI
+- Vite
+- Inertia
+- React
+- Rails
+- Tailwind CSS + DaisyUI
 
 ## Setup
 
